@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+var money = 0;
+function setmoney() {
+document.getElementById("money").innerHTML = money;
+}
+function givemoney() {
+(money = money + 10);
+}
+function spendmoney() {
+if (money >= 100) {
+(money=money-100);
+alert('you spent money!');
+}
+}
+
+</script>
+<p1> Welcome to the game </p1>
+<p id="money"> 0 money </p>
+<button onclick="setmoney()"> Set money </button>
+<button onclick="givemoney()"> Add money </button>
+<button onclick="spendmoney()"> Buy Something </button>
+
+</body>
+</html>
